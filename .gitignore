@@ -1,0 +1,12 @@
+# Group 92
+# Compiled binaries
+src/acaderp
+src/*.o
+
+# Temporary test output
+tests/*.actual
+
+# Backup and editor files
+*~
+*.swp
+*.bak
