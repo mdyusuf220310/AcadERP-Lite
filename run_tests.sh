@@ -14,7 +14,7 @@ if [ ! -x "$EXECUTABLE" ]; then
     exit 1
 fi
 
-for i in $(seq -w 1 25); do
+for i in $(seq -w 1 26); do
     input="$TEST_DIR/T${i}.in"
     expected="$TEST_DIR/T${i}.out"
     actual="$TEST_DIR/T${i}.actual"
