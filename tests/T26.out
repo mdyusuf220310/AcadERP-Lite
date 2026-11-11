@@ -1,0 +1,16 @@
+AcadERP-Lite Commands
+PROGRAM <total> <elective> <minGPA> <maxLoad> <thesisCredits>
+COURSE <code> <type> <credits> <category> <prereq>
+STUDENT <roll> <name>
+REGISTER <roll> <course> <term>
+GRADE <roll> <course> <term> <grade>
+CONVERT <roll> <thesis> <letter>
+GPA <roll>
+AVG <roll>
+GRAD <roll>
+ELIGIBLE <roll> <course> <term>
+TRANSCRIPT <roll>
+SAVE <filename>
+LOAD <filename>
+ERROR 2 E_PARSE
+ERROR 3 E_PARSE

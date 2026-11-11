@@ -283,6 +283,15 @@ Blank lines and lines beginning with `#` are ignored.
 | `AVG` | Calculate average grade |
 | `GRAD` | Check graduation eligibility |
 | `ELIGIBLE` | Check course registration eligibility |
+| `HELP` | Display all supported commands and their syntax |
+
+### HELP Command
+
+The `HELP` command displays the syntax of all supported commands,
+including the TRANSCRIPT, SAVE and LOAD bonus commands.
+
+- Format: `HELP`
+- Supplying extra arguments returns `E_PARSE`.
 
 ### Command Format
 

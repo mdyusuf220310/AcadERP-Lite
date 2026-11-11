@@ -1300,6 +1300,27 @@ ErrorCode processCommand(const std::string& line, int lineNumber) {
         return OK;
     }
 
+    if (words[0] == "HELP") {
+        if (count != 1) return E_PARSE;
+
+        std::cout << "AcadERP-Lite Commands\n"
+                  << "PROGRAM <total> <elective> <minGPA> <maxLoad> <thesisCredits>\n"
+                  << "COURSE <code> <type> <credits> <category> <prereq>\n"
+                  << "STUDENT <roll> <name>\n"
+                  << "REGISTER <roll> <course> <term>\n"
+                  << "GRADE <roll> <course> <term> <grade>\n"
+                  << "CONVERT <roll> <thesis> <letter>\n"
+                  << "GPA <roll>\n"
+                  << "AVG <roll>\n"
+                  << "GRAD <roll>\n"
+                  << "ELIGIBLE <roll> <course> <term>\n"
+                  << "TRANSCRIPT <roll>\n"
+                  << "SAVE <filename>\n"
+                  << "LOAD <filename>\n";
+
+        return OK;
+    }
+
     if (words[0] == "ELIGIBLE") {
         int term;
 
